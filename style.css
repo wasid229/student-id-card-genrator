@@ -1,183 +1,167 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
-body{
-  background:#f3f4f6;
-  color:#111;
+body {
+  background: #f3f4f6;
+  color: #111;
 }
 
 /* HEADER */
-.top-bar{
-  background:#1e3a8a;
-  color:white;
-  text-align:center;
-  padding:12px;
-  font-size:20px;
-  font-weight:bold;
+.top-bar {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* LAYOUT */
-.layout{
-  display:flex;
-  justify-content:space-between;
-  padding:20px;
-  gap:20px;
+.layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* FORM SECTION */
-.form-area{
-  width:60%;
+.form-area {
+  flex: 1;
+  min-width: 300px;
 }
 
-.form-box{
-  background:white;
-  padding:20px;
-  border-radius:10px;
-  border:1px solid #ddd;
+.form-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
 }
 
 .form-control,
-.form-select{
-  margin-top:10px;
+.form-select {
+  margin-top: 10px;
 }
 
 /* BUTTON */
-.btn-custom{
-  width:100%;
-  background:#1e3a8a;
-  color:white;
-  border:none;
-  padding:10px;
-  border-radius:6px;
-  margin-top:15px;
+.btn-custom {
+  width: 100%;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 15px;
 }
 
-.btn-custom:hover{
-  background:#152c6b;
+.btn-custom:hover {
+  background: #152c6b;
 }
 
 /* CARD AREA */
-.card-area{
-  width:35%;
-  display:flex;
-  justify-content:center;
-  align-items:flex-start;
+.card-area {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-/* ID CARD */
-#id-card{
-  width:300px;
-  background:white;
-  border:1px solid #ddd;
-  border-radius:10px;
-  overflow:hidden;
-}
-
-/* HEADER */
-.card-header{
-  background:#1e3a8a;
-  color:white;
-  text-align:center;
-  padding:10px;
-}
-
-/* PROFILE */
-.profile{
-  text-align:center;
-  padding:15px;
-}
-
-.profile img{
-  width:90px;
-  height:90px;
-  border-radius:50%;
-  object-fit:cover;
-  border:2px solid #1e3a8a;
-}
-
-/* INFO */
-.info{
-  padding:10px;
-}
-
-.info div{
-  padding:8px;
-  border-bottom:1px solid #eee;
-}
-
-.label{
-  font-weight:bold;
-  color:#1e3a8a;
-}
-
-
-
-
-
-#id-card{
-  width:340px;
-  display:flex;
-  background:white;
-  border-radius:12px;
-  overflow:hidden;
-  border:1px solid #ddd;
+/* ID CARD MAIN */
+#id-card {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
 }
 
 /* LEFT SIDE */
-.left{
-  width:40%;
-  background:#1e3a8a;
-  color:white;
-  text-align:center;
-  padding:15px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+.left {
+  width: 40%;
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.left img{
-  width:80px;
-  height:80px;
-  border-radius:50%;
-  object-fit:cover;
-  border:2px solid white;
+.left img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
 }
 
-.left h3{
-  margin-top:10px;
-  font-size:16px;
+.left h3 {
+  margin-top: 10px;
+  font-size: 16px;
 }
 
-.role{
-  font-size:12px;
-  opacity:0.8;
+.role {
+  font-size: 12px;
+  opacity: 0.8;
 }
 
 /* RIGHT SIDE */
-.right{
-  width:60%;
-  padding:10px;
+.right {
+  width: 60%;
+  padding: 10px;
 }
 
-.row{
-  margin-bottom:10px;
+.row {
+  margin-bottom: 10px;
 }
 
-.row span{
-  font-size:12px;
-  color:#666;
+.row span {
+  font-size: 12px;
+  color: #666;
 }
 
-.row p{
-  margin:0;
-  font-weight:bold;
-  color:#111;
-  font-size:14px;
-  border-bottom:1px solid #eee;
-  padding-bottom:5px;
+.row p {
+  margin: 0;
+  font-weight: bold;
+  color: #111;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* =========================
+   📱 RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .form-area,
+  .card-area {
+    width: 100%;
+  }
+
+  #id-card {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left {
+    padding: 20px;
+  }
 }
