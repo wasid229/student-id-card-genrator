@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student ID Generator</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <header class="top-bar text-center">
+      Student ID Card Generator
+    </header>
+
+    <div class="layout">
+
+      <!-- FORM SECTION -->
+      <div class="form-area">
+
+        <h2 class="mb-3">Student Form</h2>
+
+        <div class="form-box">
+
+          <input type="text" class="form-control fullName" placeholder="Enter full name">
+
+          <input type="text" class="form-control cnic mt-2" placeholder="Enter CNIC">
+
+          <select class="form-select course mt-2">
+            <option selected disabled value="">Select Course</option>
+            <option>Web Development</option>
+            <option>App Development</option>
+            <option>AI & ML</option>
+            <option>DevOps</option>
+          </select>
+
+          <select class="form-select campus mt-2">
+            <option selected disabled value="">Select Campus</option>
+            <option>Bahadurabad</option>
+            <option>Gulshan</option>
+            <option>Zamzama</option>
+            <option>Zaitoon Park</option>
+          </select>
+
+          <input type="file" class="form-control image mt-2">
+
+          <button class="btn btn-custom mt-3" onclick="generateCard()">
+            Generate Card
+          </button>
+
+        </div>
+      </div>
+
+      <!-- CARD OUTPUT -->
+      <div class="card-area">
+        <div id="outputCard"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
